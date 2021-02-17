@@ -3,3 +3,4 @@
 $el = document.querySelector('#content')
 
 console.log($el)
+console.log($el)
