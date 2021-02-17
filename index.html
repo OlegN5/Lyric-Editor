@@ -11,40 +11,58 @@
 <body>
     <h2 ad ='title' class="title" styles=color: green>Lyric Editor</h2>
     <div id="app" class="conteiner-fluid">
-        <div id='l_pannel' class="bg-light leftbar">llllllllll</div>
-        <div id='r_pannel' class="bg-light rightbar">rrrrrrrrrr</div>
         <div id='t_pannel' class="bg-light topbar">tttttttt</div>
-        <div id='editor' class="content" contenteditable="true" >Слова З. Александровой,
-            музыка М. Красева
-            
-            Текст:
-            Маленькой елочке
-            Холодно зимой.
-            Из лесу елочку
-            Взяли мы домой.
-            Из лесу елочку
-            Взяли мы домой.
-            
-            Сколько на елочке
-            Шариков цветных,
-            Розовых пряников,
-            Шишек золотых!
-            Розовых пряников,
-            Шишек золотых!
-            
-            Ветку-нарядную
-            Ниже опусти,
-            Нас, шоколадною
-            Рыбкой угости!
-            Нас, шоколадною
-            Рыбкой угости!
-            
-            Встанем под елочкой
-            В дружный хоровод,
-            Весело, весело
-            Встретим Новый год!
-            Весело, весело
-            Встретим Новый год!</div>
+        
+        
+        
+        <div id='c_pannel' class="bg-light centerbar">
+            <div class="row">
+                <div id='l_pannel' class="col leftbar">
+                    <p>Удалить символы:</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text">
+                          <input id="checkDelete" class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"> - delete
+                        </div>
+                        <input id="charsDelete" type="text" class="form-control" aria-label="Text input with checkbox" value=".,!?():;">
+                    </div>
+                </div>
+                <div id='editor' class="col content" contenteditable="true">Слова З. Александровой,
+                    музыка М. Красева
+                    
+                    Текст:
+                    Маленькой елочке
+                    Холодно зимой.
+                    Из лесу елочку
+                    Взяли мы домой.
+                    Из лесу елочку
+                    Взяли мы домой.
+                    
+                    Сколько на елочке
+                    Шариков цветных,
+                    Розовых пряников,
+                    Шишек золотых!
+                    Розовых пряников,
+                    Шишек золотых!
+                    
+                    Ветку-нарядную
+                    Ниже опусти,
+                    Нас, шоколадною
+                    Рыбкой угости!
+                    Нас, шоколадною
+                    Рыбкой угости!
+                    
+                    Встанем под елочкой
+                    В дружный хоровод,
+                    Весело, весело
+                    Встретим Новый год!
+                    Весело, весело
+                    Встретим Новый год!</div>
+                <div id='result' class="col viewer" contenteditable="false">viewerviewerviewerviewer
+                    viewerviewerviewer</div>
+                <div id='r_pannel' class="col rightbar">rrrrrrrrrr</div>
+            </div>
+        </div>
+
         <div id='b_pannel' class="bg-light bottombar">
             <div class="row align-items-end">
                 <div class="col">

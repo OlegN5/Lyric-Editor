@@ -2,44 +2,84 @@
     color:green;
     text-align: center;
 }
+
+.topbar {
+    text-align: center;
+    /* position:relative;
+    top: 0;
+    background-color:rgb(184, 19, 199);
+   
+   
+    
+    overflow-x: auto;
+    
+    height: 200;
+    
+    color: rgb(43, 79, 90) */
+} 
+.centerbar {
+    /* text-align: center; */
+
+}
+
 #app {
-    position: relative;
+    
+    /* position: relative; */
 }
 .leftbar {
-    position: fixed;
+    max-width: 15%;
+
+
+    /* position: relative;
     top: 0;
-    bottom: 0;
+    bottom: 200;
     left: 0;
     width: 200px;
     z-index: 100;
     padding: 10px;
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
-    overflow-y: auto;
+    overflow-y: auto; */
 } 
 .rightbar {
-    position: relative;
+    max-width: 15%;
+    /* position: fixed;
     top: 0;
-    translate:middle-x;
-    background-color:red;
-    color: midnightblue;
-} 
-.topbar {
-    position: top;
-    background-color:darkseagreen;
-    color: rgb(43, 79, 90)
-} 
-.bottombar {
-    position: right;
-    background-color: aquamarine;
-    color: rgb(27, 27, 209)
-
+    bottom: 200;
+    right: 0;
+    width: 200px;
+    z-index: 100;
+    padding: 10px;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    overflow-y: auto; */
 } 
 
 .content {
-    background-color: aquamarine;
+    white-space: pre-wrap
+    
+    /* background-color: aquamarine;
     position: relative;
-    top: 100;
-    right: 100;
     left: 200px;
-    white-space: pre-wrap;
+    max-width: 50%;
+    top: 100;
+    ; */
+    
 }
+
+.viewer{
+    white-space: pre-wrap
+    /* background-color: rgb(73, 118, 240);
+    position: relative;
+    white-space: pre-wrap;
+    max-width: 50%;
+    right: 200px;
+    top: 100; */
+}
+
+.bottombar {
+    text-align: center;
+    /* position: right;
+    background-color: aquamarine;
+    color: rgb(27, 27, 209) */
+
+} 
+

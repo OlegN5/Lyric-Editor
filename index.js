@@ -1,30 +1,37 @@
 $el = document.querySelector('#editor').textContent
-//const text= $el.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
-//const text= 
-$el = $el.replace(/[.,!?():;]/g,"")
-$el = $el.replace('-',"=")
 
-//const text1 = text.replace(/\s{2,}/g," ")
+const cD = document.querySelector('#checkDelete')
+const checkDelete = cD.checked
+const charsDelete = document.querySelector('#charsDelete').value
+
+
+var checkbox = document.querySelector('#checkDelete');
+
+checkbox.addEventListener('change', function() {
+  if (this.checked) {
+    console.log("Checkbox is checked..");
+    $el = $el.replace(new RegExp(`[${charsDelete}]`, "g"), "") 
+    document.querySelector('#result').textContent = $el
+  } else {
+
+    console.log("Checkbox is not checked..");
+  }
+});
+
+  $el = $el.replace('-',"=")
+  document.querySelector('#result').textContent = $el
+  
 a = 'у,е,э,о,а,ы,я,и,ю,У,Е,Э,О,А,Ы,Я,И,Ю'.split(',')
-// text = a.toarray.map(item => {
-    
 
-//     return $el = star($el, i);
-// })
- 
-//
-//debugger
-console.log(a)
-for (i of a) {
-    $el = star($el, i);
-}
+a.map(item => $el = star($el, item))
 
-$el = $el.replace("-"," ")
-
+$el = $el.replace(/- /g," ")
+//$el = $el.replace(new RegExp(`- `, "g"), " ") // variant
+document.querySelector('#result').textContent = $el
 
 function star(string, token) {
     return string.split(token).join(token+'-');
   }
-console.log($el)
-//debugger
+
+
 
